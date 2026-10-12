@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094608A97A70F0CDD058223B /* Icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D70CA9C6546BF957C0CC7 /* Icon60@2x.png */; };
+		0AD9EDD871A41D5FEFE64AF3 /* CountdownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61320C5D23B134A2B2E37861 /* CountdownModel.swift */; };
+		1EF81F3A80A5CE4CBEC81824 /* CountdownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632C472BBEFE8DA433E61F3 /* CountdownWidget.swift */; };
+		33493C6D57C75F02D80B23CE /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44A4C30CF80E5A322C4CE2 /* CountdownView.swift */; };
+		505E67DF705FF59C966872B2 /* CountdownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61320C5D23B134A2B2E37861 /* CountdownModel.swift */; };
+		879FFCAC447AF330D402BD98 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44A4C30CF80E5A322C4CE2 /* CountdownView.swift */; };
+		8F19B48BE55FB6E1B85A1F6D /* Icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2ABB616DC6F58DC531DA39 /* Icon60@3x.png */; };
+		93316B49252041E744076515 /* CountdownWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A489F11D35C3C80C848CC9FB /* CountdownWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4021DA96E953DA542F99E13 /* CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFE34A938D07F590D7F8F5 /* CountdownApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A59A0FC7E74503D17E2865FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC256C3744F9459B27053ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8B6824216553E14A8C3820;
+			remoteInfo = CountdownWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DD29287192413B962D8AFD0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93316B49252041E744076515 /* CountdownWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1632C472BBEFE8DA433E61F3 /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
+		1F2ABB616DC6F58DC531DA39 /* Icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@3x.png"; sourceTree = "<group>"; };
+		3E4D70CA9C6546BF957C0CC7 /* Icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@2x.png"; sourceTree = "<group>"; };
+		4CBEC05BDF1AA5530FDE2BB4 /* NewYear2027.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NewYear2027.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FFE34A938D07F590D7F8F5 /* CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownApp.swift; sourceTree = "<group>"; };
+		5D76D07519BD9904DB305CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		61320C5D23B134A2B2E37861 /* CountdownModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownModel.swift; sourceTree = "<group>"; };
+		A489F11D35C3C80C848CC9FB /* CountdownWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = CountdownWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC44A4C30CF80E5A322C4CE2 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		DB02C49AF8D75C5C8C8B2DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BC0FE9059C9B16219740E22 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D70CA9C6546BF957C0CC7 /* Icon60@2x.png */,
+				1F2ABB616DC6F58DC531DA39 /* Icon60@3x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		0E06E73648D72CE13177F31D /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				1632C472BBEFE8DA433E61F3 /* CountdownWidget.swift */,
+				5D76D07519BD9904DB305CAF /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		306A5950C1046C1B4344667C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52FFE34A938D07F590D7F8F5 /* CountdownApp.swift */,
+				DB02C49AF8D75C5C8C8B2DD8 /* Info.plist */,
+				0BC0FE9059C9B16219740E22 /* Icons */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5311DE801F17F1BD1CC18D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A489F11D35C3C80C848CC9FB /* CountdownWidget.appex */,
+				4CBEC05BDF1AA5530FDE2BB4 /* NewYear2027.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A564E3D932ACB8E2BEA4F09 = {
+			isa = PBXGroup;
+			children = (
+				306A5950C1046C1B4344667C /* App */,
+				83295B353EFCB917D895CE15 /* Shared */,
+				0E06E73648D72CE13177F31D /* Widget */,
+				5311DE801F17F1BD1CC18D5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83295B353EFCB917D895CE15 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				61320C5D23B134A2B2E37861 /* CountdownModel.swift */,
+				BC44A4C30CF80E5A322C4CE2 /* CountdownView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C8B6824216553E14A8C3820 /* CountdownWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C138FC97C85914B2C67744B8 /* Build configuration list for PBXNativeTarget "CountdownWidget" */;
+			buildPhases = (
+				7BC2CD10FECED5EFEB13CFFA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountdownWidget;
+			packageProductDependencies = (
+			);
+			productName = CountdownWidget;
+			productReference = A489F11D35C3C80C848CC9FB /* CountdownWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		56DC87DBD5807D29924E190D /* NewYear2027 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF9D4B7AEE6BA8AF1B930C2 /* Build configuration list for PBXNativeTarget "NewYear2027" */;
+			buildPhases = (
+				5B426ABC5BA82FDFB9E10C4D /* Sources */,
+				E5F9657F3CD72416315A2E45 /* Resources */,
+				3DD29287192413B962D8AFD0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B8CB77AB11C295A6163E61C /* PBXTargetDependency */,
+			);
+			name = NewYear2027;
+			packageProductDependencies = (
+			);
+			productName = NewYear2027;
+			productReference = 4CBEC05BDF1AA5530FDE2BB4 /* NewYear2027.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DC256C3744F9459B27053ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0C8B6824216553E14A8C3820 = {
+						DevelopmentTeam = 6L9T9NJQ94;
+						ProvisioningStyle = Automatic;
+					};
+					56DC87DBD5807D29924E190D = {
+						DevelopmentTeam = 6L9T9NJQ94;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6303FC921226C03FA5D70DEF /* Build configuration list for PBXProject "NewYear2027" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6A564E3D932ACB8E2BEA4F09;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5311DE801F17F1BD1CC18D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56DC87DBD5807D29924E190D /* NewYear2027 */,
+				0C8B6824216553E14A8C3820 /* CountdownWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5F9657F3CD72416315A2E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094608A97A70F0CDD058223B /* Icon60@2x.png in Resources */,
+				8F19B48BE55FB6E1B85A1F6D /* Icon60@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B426ABC5BA82FDFB9E10C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4021DA96E953DA542F99E13 /* CountdownApp.swift in Sources */,
+				0AD9EDD871A41D5FEFE64AF3 /* CountdownModel.swift in Sources */,
+				879FFCAC447AF330D402BD98 /* CountdownView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC2CD10FECED5EFEB13CFFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505E67DF705FF59C966872B2 /* CountdownModel.swift in Sources */,
+				33493C6D57C75F02D80B23CE /* CountdownView.swift in Sources */,
+				1EF81F3A80A5CE4CBEC81824 /* CountdownWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B8CB77AB11C295A6163E61C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8B6824216553E14A8C3820 /* CountdownWidget */;
+			targetProxy = A59A0FC7E74503D17E2865FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6887234D8212BA2846006247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 2027;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoophi.newyear2027;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		746CC2228C681071963F9A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6L9T9NJQ94;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7FBE3A9143E93556A8640D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 2027;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoophi.newyear2027.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		924E34B4B5E655F47D7AA710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 2027;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoophi.newyear2027.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D71821E81ABA76607686EC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6L9T9NJQ94;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D72FCCB515436463C88A73FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 2027;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoophi.newyear2027;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6303FC921226C03FA5D70DEF /* Build configuration list for PBXProject "NewYear2027" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D71821E81ABA76607686EC8E /* Debug */,
+				746CC2228C681071963F9A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BAF9D4B7AEE6BA8AF1B930C2 /* Build configuration list for PBXNativeTarget "NewYear2027" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6887234D8212BA2846006247 /* Debug */,
+				D72FCCB515436463C88A73FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C138FC97C85914B2C67744B8 /* Build configuration list for PBXNativeTarget "CountdownWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBE3A9143E93556A8640D17 /* Debug */,
+				924E34B4B5E655F47D7AA710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DC256C3744F9459B27053ED /* Project object */;
+}
