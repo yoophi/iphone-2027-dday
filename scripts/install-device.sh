@@ -8,9 +8,9 @@ if (( $# != 1 )); then
 fi
 device_udid=$1
 xcodebuild -project NewYear2027.xcodeproj -scheme NewYear2027 \
-    -configuration Debug -destination "id=$device_udid" \
+    -configuration Release -destination "id=$device_udid" \
     -derivedDataPath build/install \
     -allowProvisioningUpdates -allowProvisioningDeviceRegistration build
 xcrun devicectl device install app --device "$device_udid" \
-    build/install/Build/Products/Debug-iphoneos/NewYear2027.app
+    build/install/Build/Products/Release-iphoneos/NewYear2027.app
 xcrun devicectl device process launch --device "$device_udid" com.yoophi.newyear2027

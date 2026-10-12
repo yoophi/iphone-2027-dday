@@ -30,7 +30,7 @@ brew install xcodegen
 xcodegen generate
 ```
 
-연결한 기기에 설치 및 실행:
+연결한 기기에 Release 빌드 설치 및 실행:
 
 ```sh
 xcrun devicectl list devices
@@ -75,4 +75,4 @@ WidgetKit 타임라인과 배경은 [Apple WidgetKit 문서](https://developer.a
 
 `previewDate`를 바꾸면 다른 날짜와 달의 표시를 확인할 수 있다. 실제 날짜 계산은 `Shared/CountdownModel.swift`, 지원 크기는 `Shared/WidgetSizes.swift`, 전체 화면 앱은 `App/CountdownApp.swift`에서 수정한다.
 
-설치된 iOS 26 시뮬레이터에서 4단계는 레이아웃 미리보기다. iOS 27 초대형 위젯의 실제 시스템 크기는 iPhone에서 확인한다. 수정사항을 기기에 반영하려면 iPhone을 실행 대상으로 선택하고 **Run** (`⌘R`)으로 재설치한다.
+설치된 iOS 26 시뮬레이터에서 4단계는 레이아웃 미리보기다. iOS 27 초대형 위젯의 실제 시스템 크기는 iPhone에서 확인한다. 수정사항을 Release 구성으로 기기에 반영하려면 `scripts/install-device.sh`를 실행한다. Xcode의 **Run** (`⌘R`)은 개발·미리보기용 Debug 구성을 유지한다.
