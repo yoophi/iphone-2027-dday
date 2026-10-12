@@ -24,7 +24,11 @@ struct CountdownWidgetView: View {
     let entry: CountdownEntry
     @Environment(\.widgetFamily) private var family
     var body: some View {
-        CountdownView(model: CountdownModel(date: entry.date), large: family == .systemLarge)
+        CountdownView(
+            model: CountdownModel(date: entry.date),
+            large: family == .systemLarge || WidgetSizes.isExtraLargePortrait(family),
+            expanded: WidgetSizes.isExtraLargePortrait(family)
+        )
             .containerBackground(Color.white, for: .widget)
             .widgetURL(URL(string: "countdown2027://fullscreen"))
     }
@@ -38,7 +42,7 @@ struct CountdownWidgetView: View {
         }
         .configurationDisplayName("2027")
         .description("2027년 1월 1일까지 남은 날짜와 이번 달 달력")
-        .supportedFamilies([.systemMedium, .systemLarge])
+        .supportedFamilies(WidgetSizes.supported)
         .containerBackgroundRemovable(false)
     }
 }

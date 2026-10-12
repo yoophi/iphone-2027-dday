@@ -2,6 +2,12 @@ import SwiftUI
 import WidgetKit
 
 @main struct CountdownApp: App {
+    init() {
+        #if DEBUG
+        print("2027 supported widget families: " + WidgetSizes.supported.map { "\($0.rawValue):\($0.description)" }.joined(separator: ", "))
+        fflush(stdout)
+        #endif
+    }
     var body: some Scene {
         WindowGroup { ContentView().preferredColorScheme(.light) }
     }
