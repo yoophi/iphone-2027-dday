@@ -28,6 +28,15 @@ brew install xcodegen
 xcodegen generate
 ```
 
+연결한 기기에 설치 및 실행:
+
+```sh
+xcrun devicectl list devices
+./scripts/install-device.sh <iPhone-UDID>
+```
+
+Xcode가 iOS 플랫폼 구성요소가 없다고 표시하면 **Xcode → Settings → Components → iOS → Get**으로 설치한다. 개인 팀 프로비저닝은 유효기간이 짧으므로 만료 후 같은 명령으로 재설치한다.
+
 날짜·시간대·월 경계 검증:
 
 ```sh
