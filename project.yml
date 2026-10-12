@@ -22,6 +22,9 @@ targets:
     info:
       path: App/Info.plist
       properties:
+        CFBundleURLTypes:
+          - CFBundleURLName: com.yoophi.newyear2027
+            CFBundleURLSchemes: [countdown2027]
         CFBundleIcons:
           CFBundlePrimaryIcon:
             CFBundleIconFiles: [Icon60]

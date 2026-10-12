@@ -26,6 +26,7 @@ struct CountdownWidgetView: View {
     var body: some View {
         CountdownView(model: CountdownModel(date: entry.date), large: family == .systemLarge)
             .containerBackground(Color.white, for: .widget)
+            .widgetURL(URL(string: "countdown2027://fullscreen"))
     }
 }
 

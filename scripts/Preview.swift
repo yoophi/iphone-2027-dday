@@ -16,6 +16,15 @@ import AppKit
         }.padding(24).background(Color(white: 0.92))
         let renderer = ImageRenderer(content: view)
         renderer.scale = 3
+        let fullscreen = CountdownView(model: model, large: true, expanded: true)
+            .frame(width: 346, height: 708)
+            .padding(.horizontal, 28).padding(.top, 44).padding(.bottom, 28)
+            .background(Color.white)
+        let screenRenderer = ImageRenderer(content: fullscreen)
+        screenRenderer.scale = 3
+        let screenBitmap = NSBitmapImageRep(cgImage: screenRenderer.cgImage!)
+        let screenPath = URL(fileURLWithPath: output).deletingLastPathComponent().appendingPathComponent("fullscreen-preview.png")
+        try! screenBitmap.representation(using: .png, properties: [:])!.write(to: screenPath)
         let bitmap = NSBitmapImageRep(cgImage: renderer.cgImage!)
         try! bitmap.representation(using: .png, properties: [:])!.write(to: URL(fileURLWithPath: output))
     }
