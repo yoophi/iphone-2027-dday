@@ -17,6 +17,7 @@
 		8F19B48BE55FB6E1B85A1F6D /* Icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2ABB616DC6F58DC531DA39 /* Icon60@3x.png */; };
 		93316B49252041E744076515 /* CountdownWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A489F11D35C3C80C848CC9FB /* CountdownWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DBE247B21D52451E92C1383 /* WidgetSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB728BD71868E3F5C134EF /* WidgetSizes.swift */; };
+		AF25C8207A61681209D8647A /* WidgetPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8AD032B171BF1521F2214 /* WidgetPreviews.swift */; };
 		D4021DA96E953DA542F99E13 /* CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFE34A938D07F590D7F8F5 /* CountdownApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		1632C472BBEFE8DA433E61F3 /* CountdownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWidget.swift; sourceTree = "<group>"; };
 		1F2ABB616DC6F58DC531DA39 /* Icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@3x.png"; sourceTree = "<group>"; };
+		28F8AD032B171BF1521F2214 /* WidgetPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPreviews.swift; sourceTree = "<group>"; };
 		3E4D70CA9C6546BF957C0CC7 /* Icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon60@2x.png"; sourceTree = "<group>"; };
 		4CBEC05BDF1AA5530FDE2BB4 /* NewYear2027.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NewYear2027.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFE34A938D07F590D7F8F5 /* CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownApp.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				1632C472BBEFE8DA433E61F3 /* CountdownWidget.swift */,
 				5D76D07519BD9904DB305CAF /* Info.plist */,
+				28F8AD032B171BF1521F2214 /* WidgetPreviews.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				505E67DF705FF59C966872B2 /* CountdownModel.swift in Sources */,
 				33493C6D57C75F02D80B23CE /* CountdownView.swift in Sources */,
 				1EF81F3A80A5CE4CBEC81824 /* CountdownWidget.swift in Sources */,
+				AF25C8207A61681209D8647A /* WidgetPreviews.swift in Sources */,
 				11269B3DC0D442A324563C87 /* WidgetSizes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

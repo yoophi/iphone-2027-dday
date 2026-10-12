@@ -65,3 +65,14 @@ swiftc Shared/CountdownModel.swift Shared/CountdownView.swift scripts/Preview.sw
 `td init --store=gh-issue`로 GitHub Issues 저장소를 사용한다. `td task list`로 작업 상태를 조회한다.
 
 WidgetKit 타임라인과 배경은 [Apple WidgetKit 문서](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension) 및 [위젯 배경 문서](https://developer.apple.com/documentation/widgetkit/displaying-the-right-widget-background)를 기준으로 구현했다.
+
+## Xcode에서 미리보기와 편집
+
+1. `Widget/WidgetPreviews.swift`를 연다.
+2. **Editor → Canvas** (`⌥⌘↩`)를 켜고, 미리보기가 일시 정지되어 있으면 **Resume** (`⌥⌘P`)을 누른다.
+3. Canvas의 **2단계 · 중형**, **3단계 · 대형**, **4단계 · 초대형 레이아웃**, **전체 화면 레이아웃** 중 하나를 선택한다.
+4. 미리보기의 핀 버튼으로 화면을 고정한 뒤 `Shared/CountdownView.swift`를 열어 글자 크기, 색상, 간격, 정렬을 수정한다. Canvas에서 결과를 확인한다.
+
+`previewDate`를 바꾸면 다른 날짜와 달의 표시를 확인할 수 있다. 실제 날짜 계산은 `Shared/CountdownModel.swift`, 지원 크기는 `Shared/WidgetSizes.swift`, 전체 화면 앱은 `App/CountdownApp.swift`에서 수정한다.
+
+설치된 iOS 26 시뮬레이터에서 4단계는 레이아웃 미리보기다. iOS 27 초대형 위젯의 실제 시스템 크기는 iPhone에서 확인한다. 수정사항을 기기에 반영하려면 iPhone을 실행 대상으로 선택하고 **Run** (`⌘R`)으로 재설치한다.
