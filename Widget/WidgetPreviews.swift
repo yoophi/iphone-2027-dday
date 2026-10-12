@@ -18,4 +18,3 @@ private let previewDate: Date = {
 } timeline: {
     CountdownEntry(date: previewDate)
 }
-

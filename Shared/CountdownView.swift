@@ -10,7 +10,7 @@ struct CountdownView: View {
             if large {
                 VStack(spacing: 12) {
                     number(size: min(geometry.size.height * 0.34, expanded ? geometry.size.width * 0.46 : 112))
-                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height * 0.38, alignment: .leading)
+                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height * (expanded ? 0.5 : 0.46), alignment: .leading)
                     monthCalendar
                 }
             } else {
@@ -27,13 +27,20 @@ struct CountdownView: View {
     }
 
     private func number(size: CGFloat) -> some View {
-        (Text("D-").font(.system(size: size * 0.38, weight: .bold, design: .default))
-        + Text(model.daysRemaining.formatted(.number.grouping(.never)))
-            .font(.system(size: size, weight: .bold, design: .default)))
-            .monospacedDigit()
-            .lineLimit(1)
-            .minimumScaleFactor(0.45)
-            .accessibilityLabel("2027년 1월 1일까지 \(model.daysRemaining)일 남음")
+        let scaledSize = size * 1.25
+        return VStack(alignment: .leading, spacing: 2) {
+            Text("새해까지")
+                .font(.system(size: max(12, min(scaledSize * 0.14, 24)), weight: .regular, design: .default))
+                .foregroundStyle(Color(white: 0.45))
+                .lineLimit(1)
+            Text(model.daysRemaining.formatted(.number.grouping(.never)))
+                .font(.system(size: scaledSize, weight: .heavy, design: .default).width(.condensed))
+                .monospacedDigit()
+                .lineLimit(1)
+                .minimumScaleFactor(0.45)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("2027년 1월 1일까지 \(model.daysRemaining)일 남음")
     }
 
     private var monthCalendar: some View {
@@ -70,11 +77,14 @@ struct CountdownView: View {
         if let day {
             let isToday = day == model.todayNumber
             let isPast = day < model.todayNumber
+            let preferredFont: CGFloat = expanded ? 24 : (large ? 15 : 10)
+            let diameter = min(height - 1, expanded ? 44 : (large ? 30 : 20))
+            let fontSize = isToday ? min(preferredFont, diameter * 0.58) : preferredFont
             Text("\(day)")
-                .font(.system(size: expanded ? 24 : (large ? 15 : 10), weight: isToday ? .bold : .medium))
+                .font(.system(size: fontSize, weight: isToday ? .bold : .medium))
                 .monospacedDigit()
                 .foregroundStyle(isToday ? Color.white : (isPast ? Color(white: 0.75) : Color.black))
-                .frame(width: min(height - 1, expanded ? 44 : (large ? 30 : 20)), height: min(height - 1, expanded ? 44 : (large ? 30 : 20)))
+                .frame(width: diameter, height: diameter)
                 .background { if isToday { Circle().fill(Color.black) } }
                 .accessibilityLabel("\(day)일\(isToday ? ", 오늘" : (isPast ? ", 지난 날짜" : ""))")
         } else {
