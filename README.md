@@ -68,9 +68,9 @@ WidgetKit 타임라인과 배경은 [Apple WidgetKit 문서](https://developer.a
 
 ## Xcode에서 미리보기와 편집
 
-1. `Widget/WidgetPreviews.swift`를 연다.
+1. 중형·대형은 `Widget/WidgetPreviews.swift`, 초대형·전체 화면은 `Shared/CountdownView.swift`를 연다.
 2. **Editor → Canvas** (`⌥⌘↩`)를 켜고, 미리보기가 일시 정지되어 있으면 **Resume** (`⌥⌘P`)을 누른다.
-3. Canvas의 **2단계 · 중형**, **3단계 · 대형**, **4단계 · 초대형 레이아웃**, **전체 화면 레이아웃** 중 하나를 선택한다.
+3. 각 파일의 Canvas에서 원하는 미리보기를 선택한다. 초대형·전체 화면은 앱과 공유하는 View 파일에서 미리보기로 제공한다.
 4. 미리보기의 핀 버튼으로 화면을 고정한 뒤 `Shared/CountdownView.swift`를 열어 글자 크기, 색상, 간격, 정렬을 수정한다. Canvas에서 결과를 확인한다.
 
 `previewDate`를 바꾸면 다른 날짜와 달의 표시를 확인할 수 있다. 실제 날짜 계산은 `Shared/CountdownModel.swift`, 지원 크기는 `Shared/WidgetSizes.swift`, 전체 화면 앱은 `App/CountdownApp.swift`에서 수정한다.

@@ -82,3 +82,23 @@ struct CountdownView: View {
         }
     }
 }
+
+
+private var countdownPreviewDate: Date {
+    Calendar(identifier: .gregorian).date(from: DateComponents(year: 2026, month: 10, day: 12, hour: 12))!
+}
+
+#Preview("4단계 · 초대형 레이아웃", traits: .sizeThatFitsLayout) {
+    CountdownView(model: CountdownModel(date: countdownPreviewDate), large: true, expanded: true)
+        .frame(width: 330, height: 530)
+        .padding(16)
+        .background(Color.white)
+}
+
+#Preview("전체 화면 레이아웃") {
+    CountdownView(model: CountdownModel(date: countdownPreviewDate), large: true, expanded: true)
+        .padding(.horizontal, 28)
+        .padding(.top, 44)
+        .padding(.bottom, 28)
+        .background(Color.white)
+}
